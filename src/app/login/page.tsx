@@ -7,7 +7,7 @@ export default function Login() {
       <main className={styles.loginCard}>
         <div className={styles.header}>
           <span className={styles.badge}>Mateus Orcamentos</span>
-          <h1>Entrar na sua conta</h1>
+          <h1>Entrar na sua conta2</h1>
           <p>Acesse o painel para gerenciar seus orcamentos.</p>
         </div>
 
