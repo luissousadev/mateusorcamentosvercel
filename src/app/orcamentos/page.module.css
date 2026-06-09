@@ -1,0 +1,42 @@
+.page {
+  min-height: 100vh;
+  background: #000000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 138px;
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 88px;
+  width: 100%;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #d7d7d7;
+  border-radius: 10px 0 0 10px;
+  background: linear-gradient(105deg, #c4560e 0%, #68431f 48%, #0a120f 100%);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.34);
+}
+
+.titleBar h1 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding-top: 72px;
+  }
+
+  .titleBar {
+    min-height: 76px;
+  }
+
+  .titleBar h1 {
+    font-size: 18px;
+  }
+}

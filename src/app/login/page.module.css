@@ -1,0 +1,146 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background:
+    radial-gradient(circle at top left, rgba(46, 125, 89, 0.18), transparent 32%),
+    linear-gradient(135deg, #f7faf8 0%, #eef3f1 100%);
+  font-family: var(--font-geist-sans);
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid #dce5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 36px;
+  box-shadow: 0 24px 70px rgba(16, 35, 28, 0.12);
+}
+
+.header {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.badge {
+  width: fit-content;
+  border-radius: 999px;
+  background: #e5f2ec;
+  color: #1f6f4a;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+}
+
+.header h1 {
+  color: #16221d;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.header p {
+  color: #63736c;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.form {
+  display: grid;
+  gap: 18px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  color: #26342f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  border: 1px solid #cfdbd6;
+  border-radius: 6px;
+  background: #fbfdfc;
+  color: #16221d;
+  font: inherit;
+  font-weight: 400;
+  outline: none;
+  padding: 13px 14px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.field input:focus {
+  border-color: #2e7d59;
+  box-shadow: 0 0 0 4px rgba(46, 125, 89, 0.14);
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #63736c;
+  font-size: 14px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remember input {
+  accent-color: #2e7d59;
+}
+
+.options a {
+  color: #1f6f4a;
+  font-weight: 700;
+}
+
+.form button {
+  border: 0;
+  border-radius: 6px;
+  background: #2e7d59;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 14px 18px;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.form button:hover {
+  background: #236443;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 520px) {
+  .page {
+    padding: 20px;
+  }
+
+  .loginCard {
+    padding: 28px 22px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .options {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

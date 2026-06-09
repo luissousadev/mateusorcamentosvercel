@@ -1,0 +1,22 @@
+.page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background: #ffffff;
+  color: #16221d;
+  font-family: var(--font-geist-sans);
+  padding: 32px;
+}
+
+.page h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .page h1 {
+    font-size: 28px;
+  }
+}

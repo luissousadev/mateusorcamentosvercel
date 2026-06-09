@@ -1,0 +1,169 @@
+.page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f4f7f5;
+  color: #16221d;
+  font-family: var(--font-geist-sans);
+}
+
+.header,
+.formCard {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  border-radius: 999px;
+  background: #e5f2ec;
+  color: #1f6f4a;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+}
+
+.header h1 {
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.header p,
+.sectionHeader p {
+  color: #63736c;
+  font-size: 16px;
+}
+
+.backLink {
+  border: 1px solid #cfdbd6;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #26342f;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 16px;
+}
+
+.formCard {
+  border: 1px solid #dce5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 24px;
+  box-shadow: 0 18px 46px rgba(16, 35, 28, 0.08);
+}
+
+.sectionHeader {
+  margin-bottom: 22px;
+}
+
+.sectionHeader h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  color: #26342f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid #cfdbd6;
+  border-radius: 6px;
+  background: #fbfdfc;
+  color: #16221d;
+  font: inherit;
+  font-weight: 400;
+  outline: none;
+  padding: 12px 14px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #2e7d59;
+  box-shadow: 0 0 0 4px rgba(46, 125, 89, 0.14);
+}
+
+.fullWidth,
+.formActions {
+  grid-column: 1 / -1;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.primaryButton,
+.secondaryButton {
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 12px 16px;
+}
+
+.primaryButton {
+  border: 0;
+  background: #2e7d59;
+  color: #ffffff;
+}
+
+.secondaryButton {
+  border: 1px solid #cfdbd6;
+  background: #ffffff;
+  color: #26342f;
+}
+
+@media (max-width: 860px) {
+  .header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding: 22px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .formActions {
+    flex-direction: column-reverse;
+  }
+}
