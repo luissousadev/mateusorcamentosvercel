@@ -1,0 +1,600 @@
+.page {
+  min-height: 100vh;
+  padding: 28px;
+  background: #e9eceb;
+  color: #0d1714;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sheet {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  border: 1px solid #c5ccca;
+  background: #ffffff;
+  box-shadow: 0 18px 54px rgba(20, 29, 26, 0.18);
+}
+
+.titleBar {
+  display: flex;
+  min-height: 92px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 0 0;
+  background: linear-gradient(105deg, #c85f11 0%, #063327 52%, #010303 100%);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
+}
+
+.titleBar h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.clientArea {
+  display: grid;
+  gap: 8px;
+  padding: 52px 0 6px;
+}
+
+.fieldLine,
+.dateLine {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 26px;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 420px;
+  gap: 178px;
+  padding-right: 16px;
+}
+
+.fieldLine strong,
+.dateLine strong {
+  display: flex;
+  align-items: center;
+  background: #007456;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 0 8px;
+}
+
+.fieldLine span,
+.dateLine span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #d9d9d9;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0 32px;
+}
+
+.costSection {
+  margin-top: 6px;
+  padding: 0 16px 14px;
+}
+
+.costSection h2 {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  background: #007456;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.groupGrid {
+  display: grid;
+  grid-template-columns: 220px minmax(280px, 1fr) 420px;
+  gap: 30px;
+  border-bottom: 8px solid #ffffff;
+}
+
+.groupName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0c9b73;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.rows {
+  display: grid;
+  align-content: stretch;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 130px;
+  min-height: 25px;
+}
+
+.row span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d0d0d0;
+  color: #111111;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.row:nth-child(even) span {
+  background: #eeeeee;
+}
+
+.row em {
+  color: #d71920;
+  font-style: normal;
+  margin-left: 6px;
+}
+
+.row input {
+  min-width: 0;
+  border: 0;
+  border-left: 1px solid #ffffff;
+  background: #f7f7f7;
+  font: inherit;
+  outline: none;
+  padding: 2px 8px;
+}
+
+.totals {
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  padding: 0;
+}
+
+.totalBox {
+  display: grid;
+  grid-template-columns: 1fr 48px 72px;
+  min-height: 48px;
+  align-items: center;
+  background: #8c8c8c;
+  color: #ffffff;
+}
+
+.totalBox strong {
+  font-size: 13px;
+  font-weight: 800;
+  padding-left: 28px;
+}
+
+.totalBox span,
+.totalBox output {
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.variablesSection {
+  padding-bottom: 24px;
+}
+
+.variableGrid {
+  display: grid;
+  grid-template-columns: 240px minmax(340px, 1fr) 420px;
+  gap: 30px;
+  border-bottom: 8px solid #ffffff;
+}
+
+.variableName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0c9b73;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.variableRows {
+  display: grid;
+}
+
+.variableRow {
+  display: grid;
+  grid-template-columns: 1fr 48px 130px;
+  min-height: 30px;
+}
+
+.variableRow span,
+.variableRow strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d0d0d0;
+  color: #111111;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.variableRow:nth-child(even) span,
+.variableRow:nth-child(even) strong {
+  background: #eeeeee;
+}
+
+.variableRow input {
+  min-width: 0;
+  border: 0;
+  border-left: 1px solid #ffffff;
+  background: #f7f7f7;
+  font: inherit;
+  outline: none;
+  padding: 2px 8px;
+  text-align: right;
+}
+
+.variableRow input::placeholder {
+  color: #111111;
+  opacity: 1;
+}
+
+.variableTotal {
+  display: grid;
+  grid-template-columns: 1fr 48px 72px;
+  min-height: 48px;
+  align-self: center;
+  align-items: center;
+  background: #8c8c8c;
+  color: #ffffff;
+}
+
+.variableTotal strong,
+.variableTotal span,
+.variableTotal output {
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.marginSection {
+  border-top: 1px solid #c5ccca;
+  padding-bottom: 80px;
+}
+
+.marginTitle {
+  display: flex;
+  min-height: 112px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(105deg, #9f531a 0%, #073024 58%, #010303 100%);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.26);
+}
+
+.marginTitle h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.marginContent {
+  padding: 14px 16px 0;
+}
+
+.marginContent h3 {
+  display: flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  background: #007456;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.summaryArea {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+  gap: 40px;
+  align-items: center;
+  padding: 24px 0 22px;
+}
+
+.summaryColumn {
+  display: grid;
+  gap: 22px;
+}
+
+.summaryRow {
+  display: grid;
+  grid-template-columns: 176px 48px 1fr;
+  min-height: 46px;
+}
+
+.summaryRow strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0c9b73;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.summaryRow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #bfbfbf;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.summaryRow input {
+  min-width: 0;
+  border: 0;
+  background: #bfbfbf;
+  color: #000000;
+  font: inherit;
+  font-weight: 800;
+  outline: none;
+  padding: 0 14px;
+  text-align: right;
+}
+
+.summaryRow input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.observationField {
+  display: grid;
+  gap: 10px;
+  padding: 8px 0 6px;
+}
+
+.observationField span {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.observationField textarea {
+  min-height: 82px;
+  border: 3px solid #9f531a;
+  border-radius: 8px;
+  background: #ffe69b;
+  color: #000000;
+  font: inherit;
+  outline: none;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.noteLine {
+  display: grid;
+  grid-template-columns: minmax(240px, 45%) minmax(260px, 1fr);
+  min-height: 34px;
+  margin-top: 8px;
+  border: 3px solid #9f531a;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.noteLine strong {
+  display: flex;
+  align-items: center;
+  background: #cfcfcf;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 0 8px;
+}
+
+.noteLine input {
+  min-width: 0;
+  border: 0;
+  background: #ffe69b;
+  font: inherit;
+  outline: none;
+  padding: 0 10px;
+}
+
+.generateAction {
+  display: flex;
+  justify-content: center;
+  padding: 12px 16px 54px;
+}
+
+.generateButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 320px;
+  border: 2px solid #d8d8d8;
+  border-radius: 9px;
+  background: linear-gradient(105deg, #8c461d 0%, #4a2b20 54%, #111111 100%);
+  box-shadow:
+    0 4px 0 #6e6e6e,
+    0 7px 16px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  padding: 5px 16px 5px 13px;
+}
+
+.generateButton strong {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.generateIcon {
+  position: relative;
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.generateIcon::before,
+.generateIcon::after,
+.generateIcon span::before,
+.generateIcon span::after {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+}
+
+.generateIcon::before {
+  width: 22px;
+  height: 2px;
+}
+
+.generateIcon::after {
+  width: 2px;
+  height: 22px;
+}
+
+.generateIcon span {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.generateIcon span::before,
+.generateIcon span::after {
+  width: 2px;
+  height: 8px;
+  left: 2px;
+}
+
+.generateIcon span::before {
+  top: -16px;
+}
+
+.generateIcon span::after {
+  bottom: -16px;
+}
+
+@media (max-width: 980px) {
+  .fieldGrid,
+  .groupGrid,
+  .variableGrid,
+  .summaryArea {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-right: 0;
+  }
+
+  .fieldLine,
+  .dateLine {
+    grid-template-columns: 190px 1fr;
+  }
+
+  .groupName {
+    min-height: 42px;
+  }
+
+  .totals {
+    gap: 8px;
+  }
+
+  .variableName {
+    min-height: 42px;
+  }
+
+  .summaryArea {
+    gap: 18px;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .page {
+    padding: 14px;
+  }
+
+  .titleBar h1 {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .marginTitle h2 {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .clientArea {
+    padding-top: 28px;
+  }
+
+  .fieldLine,
+  .dateLine,
+  .row,
+  .totalBox,
+  .variableRow,
+  .variableTotal,
+  .summaryRow,
+  .noteLine {
+    grid-template-columns: 1fr;
+  }
+
+  .fieldLine span,
+  .dateLine span {
+    min-height: 28px;
+    justify-content: flex-start;
+    padding: 0 8px;
+  }
+
+  .row input {
+    min-height: 30px;
+    border-left: 0;
+  }
+
+  .variableRow input {
+    min-height: 30px;
+    border-left: 0;
+  }
+
+  .totalBox,
+  .variableTotal {
+    gap: 4px;
+    padding: 10px;
+  }
+
+  .totalBox strong,
+  .variableTotal strong {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .summaryRow strong,
+  .summaryRow span,
+  .summaryRow input,
+  .noteLine strong,
+  .noteLine input {
+    min-height: 32px;
+  }
+}
