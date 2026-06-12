@@ -1,0 +1,13 @@
+
+> mateusorcamentos@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.7 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.15.3:3000
+✓ Ready in 1718ms
+
+ GET / 307 in 1358ms (next.js: 836ms, application-code: 522ms)
+ GET /login 200 in 220ms (next.js: 56ms, application-code: 164ms)
+ GET / 307 in 74ms (next.js: 6ms, application-code: 69ms)
+ GET /login 200 in 175ms (next.js: 10ms, application-code: 165ms)
