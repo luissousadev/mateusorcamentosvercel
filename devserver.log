@@ -11,3 +11,5 @@
  GET /login 200 in 220ms (next.js: 56ms, application-code: 164ms)
  GET / 307 in 74ms (next.js: 6ms, application-code: 69ms)
  GET /login 200 in 175ms (next.js: 10ms, application-code: 165ms)
+ GET /login 200 in 55ms (next.js: 6ms, application-code: 49ms)
+ GET /login 200 in 89ms (next.js: 6ms, application-code: 84ms)
